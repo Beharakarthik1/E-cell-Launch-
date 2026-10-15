@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AITAM E-CELL</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        /* Hide checkbox */
+        #enter {
+            display: none;
+        }
+
+        /* Welcome Page */
+        .welcome {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #123b70,
+                #075985
+            );
+        }
+
+        .welcome h1 {
+            font-size: clamp(35px, 6vw, 60px);
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .welcome p {
+            color: #cbd5e1;
+            font-size: 20px;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #38bdf8;
+        }
+
+       </style>
+</head>
+
+<body>
+
+    <!-- Controls which page is visible -->
+    <input type="checkbox" id="enter">
+
+    <!-- WELCOME PAGE -->
+    <section class="welcome">
+
+        <h1>Welcome to AITAM E-CELL</h1>
+
+        <p>
+            Explore  Innovate  Build<br>
+            Transforming Ideas into Impact.
+        </p>
+
+        <label for="enter" class="btn" onclick="startwebsite()">
+           
+            <a href="index.html"> Get Started →</a>
+        </label>
+    </section>
+   
